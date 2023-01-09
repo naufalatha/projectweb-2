@@ -71,7 +71,7 @@
             </div>
           </form>
         </div>
-      </li> 
+      </li>
   </nav>
   <!-- /.navbar -->
 
@@ -107,8 +107,8 @@
         </div>
       </div>
     </div>
-    <!-- /.sidebar -->
   </aside>
+      <!-- /.sidebar -->
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -123,6 +123,7 @@
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item active">Search</li>
               <li class="breadcrumb-item"><a href="#">Login</a></li>
+
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -135,11 +136,6 @@
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-6">
-              <div class="page-header">
-                <h1>
-                  Daftar Berita
-                </h1>
-              </div>
             </div>
             <div class="col-md-6">
               <nav>
@@ -157,156 +153,67 @@
               </nav>
             </div>
           </div> 
-          <button type="button" class="btn btn-success">
-            Tambah
-          </button>
           <table class="table">
-            <thead>
-              <tr>
-                <th>
-                  No
-                </th>
-                <th>
-                  Tanggal
-                </th>
-                <th>
-                  Judul berita
-                </th>
-                <th>
-                  Masjid
-                </th>
-                <th>
-                  Penulis
-                </th>
-                <th>
-                  Status
-                </th>
-                <th>
-                  Action
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  1
+            <tr>
+                <td><label>Nama Masjid : </label></td>
+                <td><input type="text" id="name" style="width: 100%;" ></td>
+            </tr>
+                <td><label>Kecamatan : </label></td>
+                <td><select>
+                    <option>Beji</option>
+                    <option>Kelapa dua</option>
+                    <option>Limo</option>
+                    <option>Tapos</option>
+                    <option>Pancoran Mas</option>
+                    </select>
                 </td>
-                <td>
-                  1 Januari 2023
+                <td><label>Kelurahan : </label></td>
+                <td><select>
+                    <option>Depok</option>
+                    <option>Cimanggis</option>
+                    <option>Meruyung</option>
+                    <option>Depok Jaya</option>
+                    <option>Pondok Cina</option>
+                    </select>
                 </td>
-                <td>
-                  Peresmian Masjid
-                </td>
-                <td>
-                  Masjid NF
-                </td>
-                <td>
-                  Bang Panji
-                </td>
-                <td>
-                  Draft
-                </td>
-                <td>
-                  Detail | Edit | Delete
-                </td>
-              </tr>
-              <tr class="table-active">
-                <td>
-                  2
-                </td>
-                <td>
-                  25 Januari 2025
-                </td>
-                <td>
-                  Mengadakan Buka Puasa Bersama
-                </td>
-                <td>
-                  Masjid Dian Al-Mahri
-                </td>
-                <td>
-                  Pak Su'Aep
-                </td>
-                <td>
-                  Draft
-                </td>
-                <td>
-                  Detail | Edit | Delete
-                </td>
-              </tr>
-              <tr class="table-success">
-                <td>
-                  3
-                </td>
-                <td>
-                  25 Februari 2025
-                </td>
-                <td>
-                  Pergantian Pengurus DKM
-                </td>
-                <td>
-                  Masjid At Thohir
-                </td>
-                <td>
-                  Pak Mamat
-                </td>
-                <td>
-                  Draft
-                </td>
-                <td>
-                  Detail | Edit | Delete
-                </td>
-              </tr>
-              <tr class="table-warning">
-                <td>
-                  3
-                </td>
-                <td>
-                  30 Agustus 2025
-                </td>
-                <td>
-                  Pembangunan Masjid
-                </td>
-                <td>
-                  Masjid Jami' Baitul Kamal
-                </td>
-                <td>
-                  Pak Sukirja
-                </td>
-                <td>
-                  Draft
-                </td>
-                <td>
-                  Detail | Edit | Delete
-                </td>
-              </tr>
-              <tr class="table-danger">
-                <td>
-                  4
-                </td>
-                <td>
-                  20 September 2025
-                </td>
-                <td>
-                  Mengadakan Rihlah Remaja Masjid
-                </td>
-                <td>
-                  Masjid Jami' Ukhuwah Islamiyah
-                </td>
-                <td>
-                  Pak Asep
-                </td>
-                <td>
-                  Draft
-                </td>
-                <td>
-                  Detail | Edit | Delete
-                </td>
-              </tr>
-            </tbody>
+                <tr>
+                    <td><label for="Deskripsi Fasilitas">Deskripsi Fasilitas:</label></td>
+                    <td><textarea  id="Deskripsi Fasilitas" style="width: 100%;"></textarea></td>
+                </tr>
+            <tr>
+                <td><label>Nama Pengurus DKM : </label></td>
+                <td><input type="text" id="name" style="width: 100%;" ></td>
+            </tr>
+            <tr>
+                <td><label>No HP/Telpon : </label></td>
+                <td><input type="number" id="name" style="width: 100%;" ></td>
+            </tr>
+            <tr>
+                <td><label>Email : </label></td>
+                <td><input type="email" id="name" style="width: 100%;" ></td>
+            </tr>
+            <tr>
+                <td><label>Alamat Web : </label></td>
+                <td><input type="url" id="name" style="width: 100%;" ></td>
+            </tr>
+            <tr>
+                <td><label>Alamat Lengkap : </label></td>
+                <td><input type="text" id="name" style="width: 100%;" ></td>
+            </tr>
+            <tr>
+                <td><label>Latitude, Longitude : </label></td>
+                <td><input type="text" id="name" style="width: 100%;" ></td>
+            </tr>
           </table>
-        </div>
-      </div>
-    </div>
+          <button type="button" class="btn btn-success">
+            Simpan
+          </button>
+          <button type="button" class="btn btn-success">
+            Update
+          </button>
+          <button type="button" class="btn btn-success">
+            Hapus
+          </button>
 
     <!-- Main content -->
     <section class="content">
