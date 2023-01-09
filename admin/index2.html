@@ -106,9 +106,44 @@
           </div>
         </div>
       </div>
-    </div>
     <!-- /.sidebar -->
-  </aside>
+
+     <!-- /.sidebar menu -->
+     <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <i class="nav-icon fas fa-mosque"></i>
+            <p>
+              Masjid
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          
+        <li class="nav-item">
+          <a href="index2.html" class="nav-link active">
+            <i class="nav-icon fas fa-book"></i>
+            <p>
+              Berita
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-check"></i>
+            <p>
+              Logout
+            </p>
+          </a>
+          
+      </ul>
+    </nav>
+    </div>
+    </aside>
+    <!-- /.sidebar menu -->
+  
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -121,7 +156,9 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item active">Search</li>
+              <li>
+                <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                </li>
               <li class="breadcrumb-item"><a href="#">Login</a></li>
             </ol>
           </div><!-- /.col -->
