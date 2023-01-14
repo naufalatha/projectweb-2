@@ -25,6 +25,9 @@
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -137,7 +140,6 @@
                 Logout
               </p>
             </a>
-            
         </ul>
       </nav>
       </div>
@@ -156,10 +158,9 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li>
-                <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-                </li>
+              <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+              </li>
               <li class="breadcrumb-item"><a href="#">Login</a></li>
-
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -172,6 +173,11 @@
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-6">
+              <div class="page-header">
+                <h1>
+                  Daftar Masjid
+                </h1>
+              </div>
             </div>
             <div class="col-md-6">
               <nav>
@@ -191,51 +197,58 @@
           </div> 
           <form>
             <div class="form-group row">
-              <label for="nm" class="col-4 col-form-label">Nama Masjid :</label> 
+              <label for="nm" class="col-4 col-form-label">Nama Masjid</label> 
               <div class="col-8">
                 <input id="nm" name="nm" type="text" class="form-control">
               </div>
-            </div> 
+            </div>
             <div class="form-group row">
-              <label for="df" class="col-4 col-form-label">Deskripsi Fasilitas :</label> 
+              <label for="jb" class="col-4 col-form-label">Judul berita</label> 
               <div class="col-8">
-                <textarea id="df" name="df" cols="40" rows="4" class="form-control"></textarea>
+                <input id="jb" name="jb" type="text" class="form-control">
               </div>
             </div>
             <div class="form-group row">
-              <label for="npd" class="col-4 col-form-label">Nama Pengurus DKM :</label> 
+              <label for="ib" class="col-4 col-form-label">Isi Berita</label> 
               <div class="col-8">
-                <input id="npd" name="npd" type="text" class="form-control">
+                <textarea id="ib" name="ib" cols="40" rows="5" class="form-control"></textarea>
               </div>
             </div>
             <div class="form-group row">
-              <label for="nh" class="col-4 col-form-label">No HP/Telpon :</label> 
+              <label for="p" class="col-4 col-form-label">Penulis</label> 
               <div class="col-8">
-                <input id="nh" name="nh" type="number" class="form-control">
+                <input id="p" name="p" type="text" class="form-control">
               </div>
             </div>
             <div class="form-group row">
-              <label for="email" class="col-4 col-form-label">Email :</label> 
+              <label for="tt" class="col-4 col-form-label">Tanggal Terbit</label> 
               <div class="col-8">
-                <input id="email" name="email" type="email" class="form-control">
+                <input id="tt" name="tt" type="date" class="form-control">
               </div>
             </div>
             <div class="form-group row">
-              <label for="aw" class="col-4 col-form-label">Alamat Web :</label> 
+              <label class="col-4">Status Berita</label> 
               <div class="col-8">
-                <input id="aw" name="aw" type="url" class="form-control">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="al" class="col-4 col-form-label">Alamat Lengkap :</label> 
-              <div class="col-8">
-                <input id="al" name="al" type="text" class="form-control">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="ll" class="col-4 col-form-label">Latitude,Longitude :</label> 
-              <div class="col-8">
-                <input id="ll" name="ll" type="text" class="form-control">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="sb" id="sb_0" type="radio" class="custom-control-input" value="draft"> 
+                  <label for="sb_0" class="custom-control-label">Draft</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="sb" id="sb_1" type="radio" class="custom-control-input" value="submit"> 
+                  <label for="sb_1" class="custom-control-label">Submit</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="sb" id="sb_2" type="radio" class="custom-control-input" value="review"> 
+                  <label for="sb_2" class="custom-control-label">Review</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="sb" id="sb_3" type="radio" class="custom-control-input" value="reject"> 
+                  <label for="sb_3" class="custom-control-label">Reject</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="sb" id="sb_4" type="radio" class="custom-control-input" value="approve"> 
+                  <label for="sb_4" class="custom-control-label">Approve</label>
+                </div>
               </div>
             </div> 
             <div class="form-group row">
