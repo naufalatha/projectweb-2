@@ -52,12 +52,13 @@
 
             <div
               class="wrap-input100 validate-input"
-              data-validate="Valid email is required: admin1"
+              data-validate="Valid usrname is required: admin"
             >
               <input
                 class="input100"
                 type="text"
-                name="Username"
+                name="email"
+                id="email"
                 placeholder="Username"
               />
               <span class="focus-input100"></span>
@@ -68,12 +69,13 @@
 
             <div
               class="wrap-input100 validate-input"
-              data-validate="Password is required"
+              data-validate="Password is required : admin"
             >
               <input
                 class="input100"
                 type="password"
-                name="pass"
+                name="password"
+                id="password"
                 placeholder="Password"
               />
               <span class="focus-input100"></span>
@@ -83,9 +85,10 @@
             </div>
 
             <div class="container-login100-form-btn">
-              <a href="../admin/index.html" class="login100-form-btn">
+              <!--login() function -->
+              <button type="submit" class="login100-form-btn" onclick="login()">
                 Sign In
-              </a>
+              </button>
             </div>
 
             <div class="text-center p-t-12">
