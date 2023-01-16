@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>Direktori Masjid Depok</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -25,6 +25,9 @@
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -72,13 +75,6 @@
           </form>
         </div>
       </li>
-
-      <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
-        </a>
-      </li>
-    </ul>
   </nav>
   <!-- /.navbar -->
 
@@ -87,7 +83,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">Masjid Depok</span>
     </a>
 
     <!-- Sidebar -->
@@ -98,7 +94,7 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Lutfi Admin</a>
         </div>
       </div>
 
@@ -113,23 +109,25 @@
           </div>
         </div>
       </div>
+      <!-- /.sidebar -->
 
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
+       <!-- /.sidebar menu -->
+       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="index.html" class="nav-link">
+              <i class="nav-icon fas fa-mosque"></i>
               <p>
                 Masjid
+                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-          </li>
+            
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="index2.html" class="nav-link active">
+              <i class="nav-icon fas fa-book"></i>
               <p>
                 Berita
               </p>
@@ -137,18 +135,16 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-check"></i>
               <p>
                 Logout
               </p>
             </a>
-          </li>
         </ul>
       </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
+      </div>
+      </aside>
+      <!-- /.sidebar menu -->
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -157,37 +153,125 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Daftar Masjid</h1>
+            <h1 class="m-0" style="text-align: center;">Admin - Direktori Data Masjid Kota Depok</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item">Admin</li>
-              <li class="breadcrumb-item active">Kelola Masjid</li>
+              <li>
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              </li>
+              <li class="breadcrumb-item"><a href="#">Login</a></li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
-        <div class="row mb-2">
-            <a href="#" class="btn btn-success">Tambah</a>
-        </div>
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="page-header">
+                <h1>
+                  Daftar Masjid
+                </h1>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <nav>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#">Admin</a>
+                  </li>
+                  <li class="breadcrumb-item active">
+                    Kelola Masjid
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div> 
+          <form>
+            <div class="form-group row">
+              <label for="nm" class="col-4 col-form-label">Nama Masjid</label> 
+              <div class="col-8">
+                <input id="nm" name="nm" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="jb" class="col-4 col-form-label">Judul berita</label> 
+              <div class="col-8">
+                <input id="jb" name="jb" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="ib" class="col-4 col-form-label">Isi Berita</label> 
+              <div class="col-8">
+                <textarea id="ib" name="ib" cols="40" rows="5" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="p" class="col-4 col-form-label">Penulis</label> 
+              <div class="col-8">
+                <input id="p" name="p" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="tt" class="col-4 col-form-label">Tanggal Terbit</label> 
+              <div class="col-8">
+                <input id="tt" name="tt" type="date" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-4">Status Berita</label> 
+              <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="sb" id="sb_0" type="radio" class="custom-control-input" value="draft"> 
+                  <label for="sb_0" class="custom-control-label">Draft</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="sb" id="sb_1" type="radio" class="custom-control-input" value="submit"> 
+                  <label for="sb_1" class="custom-control-label">Submit</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="sb" id="sb_2" type="radio" class="custom-control-input" value="review"> 
+                  <label for="sb_2" class="custom-control-label">Review</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="sb" id="sb_3" type="radio" class="custom-control-input" value="reject"> 
+                  <label for="sb_3" class="custom-control-label">Reject</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="sb" id="sb_4" type="radio" class="custom-control-input" value="approve"> 
+                  <label for="sb_4" class="custom-control-label">Approve</label>
+                </div>
+              </div>
+            </div> 
+            <div class="form-group row">
+              <div class="offset-4 col-8">
+                <button name="Simpan" type="submit" class="btn btn-primary">Simpan</button>
+                <button name="Update" type="submit" class="btn btn-primary">Update</button>
+                <button name="Hapus" type="submit" class="btn btn-primary">Hapus</button>
+              </div>
+            </div>
+          </form>
+
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-<!-- Konten Form -->
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
+    <strong>Develop By Mahasiswa STT-NF @2022
     <div class="float-right d-none d-sm-inline-block">
-      <b>Kelompok 1</b> SI08
+      <b>@Pahlawan</b> Revolusi
     </div>
   </footer>
 
