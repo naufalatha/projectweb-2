@@ -130,7 +130,7 @@
             class="brand-image img-circle elevation-3"
             style="opacity: 0.8"
           />
-          <span class="brand-text font-weight-light">AdminLTE 3</span>
+          <span class="brand-text font-weight-light">GO MASJID</span>
         </a>
 
         <!-- Sidebar -->
@@ -145,7 +145,7 @@
               />
             </div>
             <div class="info">
-              <a href="#" class="d-block">Alexander Pierce</a>
+              <a href="#" class="d-block">Admin</a>
             </div>
           </div>
 
@@ -166,37 +166,38 @@
             </div>
           </div>
 
-          <!-- Sidebar Menu -->
-          <nav class="mt-2">
-            <ul
-              class="nav nav-pills nav-sidebar flex-column"
-              data-widget="treeview"
-              role="menu"
-              data-accordion="false"
-            >
-              <!-- Add icons to the links using the .nav-icon class
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>Masjid</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>Berita</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>Logout</p>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <!-- /.sidebar-menu -->
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="nav-icon fas fa-mosque"></i>
+              <p>
+                Masjid
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="index2.html" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Berita
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                Logout
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
         </div>
         <!-- /.sidebar -->
       </aside>
@@ -221,9 +222,6 @@
               <!-- /.col -->
             </div>
             <!-- /.row -->
-            <div class="row mb-2">
-              <a href="#" class="btn btn-success">Tambah</a>
-            </div>
           </div>
           <!-- /.container-fluid -->
         </div>
@@ -248,13 +246,13 @@
                   <div class="form-group">
                     <label>Kecamatan</label>
                     <select class="form-control select2" style="width: 100%">
-                      <option selected="selected">Alabama</option>
-                      <option>Alaska</option>
-                      <option>California</option>
-                      <option>Delaware</option>
-                      <option>Tennessee</option>
-                      <option>Texas</option>
-                      <option>Washington</option>
+                      <option selected="selected" disabled>Pilih Kecamatan</option>
+                      <option>Cimanggis</option>
+                      <option>Tapos</option>
+                      <option>Cilodong</option>
+                      <option>Pancoran Mas</option>
+                      <option>Limo</option>
+                      <option>Beji</option>
                     </select>
                   </div>
                 </div>
@@ -262,15 +260,75 @@
                   <div class="form-group">
                     <label>Kelurahan</label>
                     <select class="form-control select2" style="width: 100%">
-                      <option selected="selected">Alabama</option>
-                      <option>Alaska</option>
-                      <option>California</option>
-                      <option>Delaware</option>
-                      <option>Tennessee</option>
-                      <option>Texas</option>
-                      <option>Washington</option>
+                      <option selected="selected" disabled>Pilih Kelurahan</option>
+                      <option>Sukamaju</option>
+                      <option>Mekarjaya</option>
+                      <option>Sukamaju baru</option>
+                      <option>Cilangkap</option>
+                      <option>Meruyung</option>
+                      <option>Cimpaeun</option>
                     </select>
                   </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Deskripsi Fasilitas</label>
+                    <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputNama">Nama Pengurus DKM</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputNama"
+                  placeholder="Masukkan nama pengurus"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputNama">No HP/TELPON</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleInputNama"
+                  placeholder="Masukkan no telp"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputNama">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputNama"
+                  placeholder="Masukkan email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputNama">Alamat Web</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputNama"
+                  placeholder="Masukkan alamat web"
+                />
+              </div>
+              <div class="form-group">
+                <label>Alamat Lengkap</label>
+                    <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputNama">Latitude,Longitude</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputNama"
+                  placeholder="Masukkan titik lokasi"
+                />
+              </div>
+              <div class="form-group row">
+                <div class="offset-4 col-8">
+                  <button name="Simpan" type="submit" class="btn btn-success">Simpan</button>
+                  <button name="Update" type="submit" class="btn btn-warning">Update</button>
+                  <button name="Hapus" type="submit" class="btn btn-danger">Hapus</button>
                 </div>
               </div>
             </form>
